@@ -1,0 +1,43 @@
+html,
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.navbar{
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.navbar + *{
+margin-top: 80px;
+}
+.navbar__content{
+	display: flex;
+	padding: 0 10px;
+	margin: 0;
+	list-style: none;
+}
+.navbar__item{
+
+}
+.navbar__link{
+	display: block;
+	padding: 20px 15px;
+	border-right: 1px solid white;
+	color: white;
+	transition: all 0.2s ease-in-out;
+	&:hover{
+		background: white;
+		border-right-color: black;
+		color: black;
+	}
+}
+.router-link-exact-active{
+	color: red;
+	&:hover{
+		color: red;
+	}
+}
