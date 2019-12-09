@@ -4,6 +4,7 @@ import Router from "vue-router";
 Vue.use(Router);
 
 import Home from "@/components/Home";
+import Error404 from "@/components/error404";
 import Example from "@/components/Example";
 
 export default new Router({
@@ -17,6 +18,11 @@ export default new Router({
       path: "/example",
       name: "Example",
       component: Example
+		},
+		{
+      path: "*",
+      name: "notFound",
+      component: Error404
     }
   ]
 });
