@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+  <div class>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'app',
-  components: {
-  }
-}
+  name: "app",
+  components: {}
+};
 </script>
