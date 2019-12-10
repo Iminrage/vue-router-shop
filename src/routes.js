@@ -8,7 +8,6 @@ import Error404 from "@/pages/error404";
 import Example from "@/pages/Example";
 import Shop from "@/pages/Shop";
 import Product from "@/pages/Product";
-
 export default new Router({
   routes: [
     {
@@ -28,8 +27,8 @@ export default new Router({
 		},
 		{
 			path: "/shop/:id",
-			name: "product",
-			components: Product
+			name: "Product",
+			component: Product
 		},
 		{
       path: "*",
