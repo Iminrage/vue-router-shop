@@ -29,6 +29,10 @@ export default {
           url: "/example",
           title: "example"
 				},
+				        {
+          url: "/shop",
+          title: "shop"
+				},
       ]
     };
   }
