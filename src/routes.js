@@ -3,9 +3,11 @@ import Router from "vue-router";
 
 Vue.use(Router);
 
-import Home from "@/components/Home";
-import Error404 from "@/components/error404";
-import Example from "@/components/Example";
+import Home from "@/pages/Home";
+import Error404 from "@/pages/error404";
+import Example from "@/pages/Example";
+import Shop from "@/pages/Shop";
+import Product from "@/pages/Product";
 
 export default new Router({
   routes: [
@@ -18,6 +20,16 @@ export default new Router({
       path: "/example",
       name: "Example",
       component: Example
+		},
+		{
+			path: "/shop",
+			name: "Shop",
+			component: Shop
+		},
+		{
+			path: "/shop/:id",
+			name: "product",
+			components: Product
 		},
 		{
       path: "*",
