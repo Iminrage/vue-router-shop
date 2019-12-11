@@ -1,70 +1,98 @@
 html,
-body{
-	padding: 0;
-	margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-.container{
-	padding: 0 200px;
+.container {
+  padding: 0 200px;
 }
-.navbar{
-	background: #000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+.navbar {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.navbar + *{
-margin-top: 80px;
+.navbar + * {
+  margin-top: 80px;
 }
-.navbar__content{
-	display: flex;
-	padding: 0 10px;
-	margin: 0;
-	list-style: none;
+.navbar__content {
+  display: flex;
+  padding: 0 10px;
+  margin: 0;
+  list-style: none;
 }
-.navbar__item{
+.navbar__item {
+}
+.navbar__link {
+  display: block;
+  padding: 20px 15px;
+  border-right: 1px solid white;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: white;
+    border-right-color: black;
+    color: black;
+  }
+}
+.router-link-exact-active {
+  color: red;
+  &:hover {
+    color: red;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 0;
+}
+.cards__item {
+  flex-basis: calc(25% - 10px);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.cards__link {
+  display: block;
+  background: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    background: rgb(224, 224, 224);
+  }
+}
+.cards__title {
+  text-align: center;
+  color: black;
+}
+.cards__img {
+  display: block;
+  margin: 0 auto;
+  max-height: 150px;
+  height: 100%;
+}
 
-}
-.navbar__link{
-	display: block;
-	padding: 20px 15px;
-	border-right: 1px solid white;
-	color: white;
-	transition: all 0.2s ease-in-out;
-	&:hover{
-		background: white;
-		border-right-color: black;
-		color: black;
-	}
-}
-.router-link-exact-active{
-	color: red;
-	&:hover{
-		color: red;
-	}
-}
-.cards{
+.product__main-content {
 	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
+	align-items: center;
+	border-bottom: 5px solid black;
+}
+.product__title{
+	font-size: 52px;
+	border-left: 2px solid black;
+	padding: 5px 20px;
+}
+.product__other-content{
+	margin-top: 50px;
+}
+.product__descr{
 	margin: 0;
-	margin-top: -10px;
-	margin-left: -10px;
-	padding: 0;
-}
-.cards__item{
-	flex-basis: calc(25% - 10px);
-	margin-top: 10px;
-	margin-left: 10px;
-}
-.cards__link{
-	display: block;
-	background: white;
-	padding: 10px 20px;
-	box-shadow: 0 2px 5px rgba(0,0,0, 0.3);
-}
-.cards__img{
-	display: block;
-	margin: 0 auto;
-	height: 200px;
+	padding: 0 100px;
 }
